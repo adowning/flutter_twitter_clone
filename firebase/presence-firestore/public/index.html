@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+  Copyright 2016 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html> 
+    <head>
+        <title>Presence in Cloud Firestore</title>
+    </head>
+    <body>
+        <h3>History of user presence (since this page was opened)</h3>
+        <div id="history">
+
+        </div>
+        <!-- Import and configure the Firebase SDK -->
+        <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+        <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+        <!-- <script src="/__/firebase/7.18.0/firebase-app.js"></script> -->
+        <!-- <script src="/__/firebase/7.18.0/firebase-auth.js"></script> -->
+        <!-- <script src="/__/firebase/7.18.0/firebase-firestore.js"></script> -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
+
+        <!-- <script src="/__/firebase/init.js"></script> -->
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCCKr2-N472EATnq1BIvm7WwU9kmFL0qLM",
+    authDomain: "mobile-andrews.firebaseapp.com",
+    databaseURL: "https://mobile-andrews.firebaseio.com",
+    projectId: "mobile-andrews",
+    storageBucket: "mobile-andrews.appspot.com",
+    messagingSenderId: "867530740749",
+    appId: "1:867530740749:web:eda91bd85a912fefa77144",
+    measurementId: "G-T598J2X7SY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
